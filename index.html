@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Котохата — притулок для тварин</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fffaf5;
+      color: #3e2e1e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6b4e2e;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    nav {
+      background-color: #d8c3a5;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 0.8em;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3e2e1e;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    h2 {
+      color: #6b4e2e;
+      border-bottom: 2px solid #d8c3a5;
+      padding-bottom: 0.3em;
+    }
+    .animals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    .animal-card {
+      border: 1px solid #d8c3a5;
+      border-radius: 10px;
+      padding: 1em;
+      background-color: white;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .animal-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7em;
+      max-width: 400px;
+    }
+    input, textarea, button {
+      padding: 0.7em;
+      border: 1px solid #d8c3a5;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    button {
+      background-color: #6b4e2e;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5a3f24;
+    }
+    footer {
+      background-color: #6b4e2e;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Котохата</h1>
+    <p>Притулок для бездомних котів та собак</p>
+  </header>
+  <nav>
+    <a href="#home">Головна</a>
+    <a href="#about">Про нас</a>
+    <a href="#animals">Каталог тварин</a>
+    <a href="#help">Як допомогти</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Ласкаво просимо до «Котохати»</h2>
+      <p>Ми — волонтерський притулок, який допомагає тваринам знайти нову домівку. Наша місія — дати другий шанс тим, хто його найбільше потребує.</p>
+    </section>
+    <section id="about">
+      <h2>Про нас</h2>
+      <p>«Котохата» — це безпечне місце для котів і собак, що потрапили в біду. Ми займаємося лікуванням, доглядом і пошуком люблячих родин. Усі тварини вакциновані, стерилізовані та готові до всиновлення.</p>
+    </section>
+    <section id="animals">
+      <h2>Наші мешканці</h2>
+      <div class="animals">
+        <div class="animal-card">
+          <img src="https://placekitten.com/300/200" alt="Кіт Мурчик">
+          <h3>Мурчик</h3>
+          <p>2 роки. Добрий, лагідний та любить гратися з дітьми.</p>
+        </div>
+        <div class="animal-card">
+          <img src="https://placekitten.com/301/200" alt="Кішка Соня">
+          <h3>Соня</h3>
+          <p>1 рік. Спокійна, ніжна, чудово ладнає з іншими котами.</p>
+        </div>
+        <div class="animal-card">
+          <img src="https://placekitten.com/302/200" alt="Пес Барс">
+          <h3>Барс</h3>
+          <p>3 роки. Активний і вірний друг, чудовий охоронець.</p>
+        </div>
+      </div>
+    </section>
+    <section id="help">
+      <h2>Як допомогти</h2>
+      <p>Ви можете підтримати «Котохату» пожертвами, кормом або волонтерством.</p>
+      <form>
+        <input type="text" placeholder="Ваше ім’я" required>
+        <input type="email" placeholder="Ваш Email" required>
+        <textarea rows="4" placeholder="Повідомлення або ідея допомоги"></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p><strong>Адреса:</strong> м. Львів, вул. Тваринна, 5</p>
+      <p><strong>Телефон:</strong> +380 67 123 45 67</p>
+      <p><strong>Email:</strong> info@kotohata.org</p>
+    </section>
+  </main>
+  <footer>
+    © 2025 Котохата. Усі права захищені.
+  </footer>
+</body>
+</html>
